@@ -8,8 +8,8 @@ public class Subsets {
             System.out.println(s1);
             return;
         }
-        subset(s.substring(1),s1);
-        s1=s1+s.charAt(0);
+        subset(s.substring(1),s1+s.charAt(0));
+       
 
         subset(s.substring(1),s1);
 
@@ -23,3 +23,5 @@ public class Subsets {
         subset(s,"");
     }
 }
+s="abc"
+output: abc............empty
